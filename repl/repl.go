@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io"
 
+	"github.com/claudio4/going-monkey/evaluator"
 	"github.com/claudio4/going-monkey/lexer"
 	"github.com/claudio4/going-monkey/parser"
 )
@@ -31,8 +32,12 @@ func Start(in io.Reader, out io.Writer) {
 			continue
 		}
 
-		io.WriteString(out, program.String())
-		out.Write([]byte{'\n'})
+		evaluated := evaluator.Eval(program)
+		if evaluated != nil {
+			io.WriteString(out, evaluated.Inspect())
+			out.Write([]byte{'\n'})
+		}
+
 	}
 }
 
