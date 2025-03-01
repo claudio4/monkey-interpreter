@@ -7,6 +7,7 @@ import (
 
 	"github.com/claudio4/going-monkey/evaluator"
 	"github.com/claudio4/going-monkey/lexer"
+	"github.com/claudio4/going-monkey/object"
 	"github.com/claudio4/going-monkey/parser"
 )
 
@@ -14,6 +15,7 @@ const prompt = ">> "
 
 func Start(in io.Reader, out io.Writer) {
 	scanner := bufio.NewScanner(in)
+	env := object.NewEnvironment()
 
 	for {
 		fmt.Fprint(out, prompt)
@@ -32,7 +34,7 @@ func Start(in io.Reader, out io.Writer) {
 			continue
 		}
 
-		evaluated := evaluator.Eval(program)
+		evaluated := evaluator.Eval(program, env)
 		if evaluated != nil {
 			io.WriteString(out, evaluated.Inspect())
 			out.Write([]byte{'\n'})
