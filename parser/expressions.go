@@ -111,6 +111,10 @@ func (p *Parser) parseIntegerLiteral() ast.Expression {
 	return il
 }
 
+func (p *Parser) parseStringLiteral() ast.Expression {
+	return &ast.StringLiteral{Token: p.currentToken, Value: p.currentToken.Literal}
+}
+
 func (p *Parser) parseBoolean() ast.Expression {
 	return &ast.Boolean{
 		Token: p.currentToken,
