@@ -1,6 +1,10 @@
 package evaluator
 
-import "github.com/claudio4/going-monkey/object"
+import (
+	"fmt"
+
+	"github.com/claudio4/going-monkey/object"
+)
 
 var builtins = map[string]*object.Builtin{
 	"len": {
@@ -100,6 +104,15 @@ var builtins = map[string]*object.Builtin{
 			copy(newElems[length:], args[1:])
 
 			return &object.Array{Elements: newElems}
+		},
+	},
+	"puts": {
+		Fn: func(args ...object.Object) object.Object {
+			for _, arg := range args {
+				fmt.Println(arg.Inspect())
+			}
+
+			return NULL
 		},
 	},
 }
