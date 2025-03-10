@@ -12,7 +12,7 @@ Monkey is a simple yet powerful interpreted programming language. This interpret
 - First-class functions with closures
 - Built-in functions (e.g., `len`, `first`, `last`)
 - Conditionals and loops
-- Metaprogramming and macros.
+- Metaprogramming and macros
 - A basic REPL for interactive use
 
 ## Getting Started
