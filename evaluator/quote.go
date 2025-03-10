@@ -3,9 +3,9 @@ package evaluator
 import (
 	"fmt"
 
-	"github.com/claudio4/going-monkey/ast"
-	"github.com/claudio4/going-monkey/object"
-	"github.com/claudio4/going-monkey/token"
+	"github.com/claudio4/monkey-interpreter/ast"
+	"github.com/claudio4/monkey-interpreter/object"
+	"github.com/claudio4/monkey-interpreter/token"
 )
 
 func quote(node ast.Node, env *object.Environment) object.Object {

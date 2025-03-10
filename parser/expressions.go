@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/claudio4/going-monkey/ast"
-	"github.com/claudio4/going-monkey/token"
+	"github.com/claudio4/monkey-interpreter/ast"
+	"github.com/claudio4/monkey-interpreter/token"
 )
 
 type (

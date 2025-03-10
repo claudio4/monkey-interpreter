@@ -3,7 +3,7 @@ package evaluator
 import (
 	"fmt"
 
-	"github.com/claudio4/going-monkey/object"
+	"github.com/claudio4/monkey-interpreter/object"
 )
 
 var builtins = map[string]*object.Builtin{

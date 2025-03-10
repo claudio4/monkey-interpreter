@@ -1,8 +1,8 @@
 package evaluator
 
 import (
-	"github.com/claudio4/going-monkey/ast"
-	"github.com/claudio4/going-monkey/object"
+	"github.com/claudio4/monkey-interpreter/ast"
+	"github.com/claudio4/monkey-interpreter/object"
 )
 
 func ExpandMacros(program ast.Node, env *object.Environment) ast.Node {

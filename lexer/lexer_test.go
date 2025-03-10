@@ -3,7 +3,7 @@ package lexer
 import (
 	"testing"
 
-	"github.com/claudio4/going-monkey/token"
+	"github.com/claudio4/monkey-interpreter/token"
 )
 
 func TestNextToken(t *testing.T) {

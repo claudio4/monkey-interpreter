@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/claudio4/going-monkey/evaluator"
-	"github.com/claudio4/going-monkey/lexer"
-	"github.com/claudio4/going-monkey/object"
-	"github.com/claudio4/going-monkey/parser"
+	"github.com/claudio4/monkey-interpreter/evaluator"
+	"github.com/claudio4/monkey-interpreter/lexer"
+	"github.com/claudio4/monkey-interpreter/object"
+	"github.com/claudio4/monkey-interpreter/parser"
 )
 
 const prompt = ">> "

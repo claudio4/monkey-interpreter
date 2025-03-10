@@ -3,9 +3,9 @@ package parser
 import (
 	"fmt"
 
-	"github.com/claudio4/going-monkey/ast"
-	"github.com/claudio4/going-monkey/lexer"
-	"github.com/claudio4/going-monkey/token"
+	"github.com/claudio4/monkey-interpreter/ast"
+	"github.com/claudio4/monkey-interpreter/lexer"
+	"github.com/claudio4/monkey-interpreter/token"
 )
 
 type Parser struct {

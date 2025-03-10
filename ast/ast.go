@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"strings"
 
-	"github.com/claudio4/going-monkey/token"
+	"github.com/claudio4/monkey-interpreter/token"
 )
 
 type Node interface {

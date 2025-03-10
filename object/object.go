@@ -6,7 +6,7 @@ import (
 	"hash/fnv"
 	"strings"
 
-	"github.com/claudio4/going-monkey/ast"
+	"github.com/claudio4/monkey-interpreter/ast"
 )
 
 type ObjectType string

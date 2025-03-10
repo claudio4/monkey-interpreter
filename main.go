@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/user"
 
-	"github.com/claudio4/going-monkey/repl"
+	"github.com/claudio4/monkey-interpreter/repl"
 )
 
 func main() {
